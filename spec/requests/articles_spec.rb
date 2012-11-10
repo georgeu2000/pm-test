@@ -26,8 +26,9 @@ describe 'Articles' do
   end
 
   it 'gets article link' do
-    within 'span.link' do
-      page.should have_content article.link
+    within 'span.name' do
+      page.should have_selector "a[href$='#{article.link}']"
+      page.should have_selector "a[class$='link']"
     end
   end
 

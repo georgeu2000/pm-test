@@ -1,6 +1,7 @@
 WidgetTest::Application.routes.draw do
 
-  get '/articles' => 'articles#get', as: :articles
+  get '/articles' => 'articles#get'
+  root :to => 'widgets#get'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

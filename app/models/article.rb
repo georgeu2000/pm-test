@@ -1,7 +1,7 @@
 class Article < ActiveRecord::Base
 
   def thumbnail
-    "/images/thumbnails/#{id}"
+    "/images/thumbnails/#{id}.png"
   end
-  
+
 end
