@@ -1,0 +1,15 @@
+<div class="participant_media_widget" >
+  <a id="opener" href="#">See Articles</a>
+</div>
+
+<div id="dialog" title="Articles"></div>
+ 
+ <script>
+ $(function() {
+  $( "#dialog" ).dialog({ autoOpen: false });
+  $( "#opener" ).click(function() {
+    $( "#dialog" ).dialog( "open" );
+    $( "#dialog" ).load('/articles');
+  });
+});
+ </script>
