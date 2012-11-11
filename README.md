@@ -1,6 +1,6 @@
 Application
-===========
-You can [view it on Heroku](participant-media.herokuapp.com)
+-----------
+[View it on Heroku](http://participant-media.herokuapp.com)
 
 Design Notes
 ------------
